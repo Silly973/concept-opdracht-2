@@ -1,0 +1,421 @@
+/*Global Styles*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+}
+
+:root{
+    --paars: #5722CD;
+    --lichtpaars: #F2F0FF;
+    --Blauw: #4845E4;
+    --Roze: #ED4385;
+    --Zwart:#0C0C0C;
+    --lichtgrijs: #F3F6F9;
+    --Grijs: #7A7A7A;
+}
+
+
+body{
+    background: #F3F6F9;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+.content-container{
+    flex-basis: 500px;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+
+}
+
+header{
+    background-color: #4845E4;
+    background: linear-gradient(35deg, rgba(2,0,36,100) 0%, rgba(72,69,228,100) 35%, rgba(0,212,255,100) 100%);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.nav{
+    color: #F3F6F9;
+    padding: 0;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 800px;
+
+
+}
+
+nav li{
+    top: 0;
+    margin: 0px 0px 10px 90px;
+
+
+}
+
+nav a{
+    float: right;
+    color: #F3F6F9;
+    text-decoration: none;
+    font-size:10px;
+}
+
+nav a :hover{
+
+}
+/*head*/
+.head{
+    width: 100%;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+
+}
+h1{
+    font-family: 'Merriweather', serif;
+    font-size: large;
+    color: white;
+    text-align: center;
+
+}
+
+.head p{
+    color: #F2F0FF;
+    font-size:15px;
+    text-align: center;
+}
+
+
+
+/*button*/
+.button{
+    background: #ED4385;
+    border: none;
+    color: #F3F6F9;
+    text-decoration: none;
+    padding: .2em 1em;
+    border-radius: 5em;
+    text-align: center;
+    margin: auto;
+    display: flex;
+
+
+
+}
+
+.squiggle-line {
+    border: 3px solid green;
+    margin-top: 50px;
+    width: 30px;
+    height: 50px;
+    margin-left: 590px;
+
+
+
+}
+
+.hero{
+    border: 3px solid green;
+    padding: 30px 100px;
+    text-align:center;
+    color: #4845E4;
+    line-height: 30px;
+}
+
+
+.hero p{
+    font-weight: bold;
+    padding: 15px;
+}
+
+
+
+.hero div{
+    color: #0C0C0C;
+    font-size: 10px;
+    text-align: center;
+}
+
+span{
+    color: #4845E4;
+}
+
+
+
+
+
+/*images*/
+/*#wrapper{
+    max-width: 100%x;
+    overflow: hidden;
+}
+
+.image {
+    border: 3px solid green;
+   box-shadow: 5px 5px 2px hsl(0, 0%, 0%);*/
+
+
+.content div{
+    font-size: small;
+    color: #4845E4;
+}
+
+/*#wrapper2{
+    max-width: 100%x;
+    overflow: hidden;
+}*/
+
+.reversed-images{
+    background-color: #F2F0FF;
+
+}
+.reversed-images img{
+    width: 50%;
+    padding: 1%;
+    float: left;
+}
+
+.content{
+    background-color: #F2F0FF;
+    width: 50%;
+    padding: 2%;
+    float: left;
+    line-height: 40px;
+
+}
+
+.content p {
+    line-height: 20px;
+}
+
+
+.content div{
+    font-size: small;
+    color: #4845E4;
+}
+
+*/
+
+
+.containers{
+    margin-inline:auto;
+    width: min(90%, 70.5rem);
+
+}
+.split {
+    background-color: #F2F0FF;
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.split h3{
+    margin-top: 50px;
+
+
+}
+
+.split svg{
+
+}
+
+
+@media (min-width: 40em){
+    .split{
+        flex-direction: row;
+        margin: 0px
+    }
+
+    .split> * + *{
+        margin-left: 1em;
+
+    }
+
+    .split div{
+        text-align: left;
+        justify-content: center;
+        max-width: 100%;
+        margin: 50px 60px;
+        font-size: small;
+
+
+    }
+
+
+    .containers img{
+        display: block;
+        max-width: 100%;
+    }
+
+    .containers a{
+        color: #4845E4;
+        text-decoration: none;
+
+    }
+
+
+    .tiles-section {
+        color: #4845E4;
+        margin: 0;
+        padding: 0;
+
+    }
+
+
+    .container{
+        width: 100%;
+        overflow: hidden;
+        margin: 50px 50px;
+        padding: 50px;
+        border: 3px solid red;
+
+    }
+
+    .container ul{
+        padding: 0;
+        margin: auto;
+        text-align: center;
+        display: inline;
+        justify-content: center;
+
+    }
+
+    .container ul li{
+        float: left;
+        list-style: none;
+        width: 25%;
+        height: 300px;
+        margin: 20px 2px 20px 55px;
+        border: 2px solid #5722CD;
+        box-sizing: border-box;
+
+    }
+    .container img{
+        padding: 0;
+        width: 20%;
+
+
+    }
+
+    .container h3{
+        line-height: 30px;
+        font-size: large;
+    }
+    .container ul li .box{
+        width: 100%;
+        height:50px;
+        line-height: 20px;
+        text-align: left;
+        font-size: 10px;
+        padding: 10px 10px 10px 20px;
+
+    }
+
+
+
+    .contact-container{
+        border: 3px solid greenyellow;
+        background-color: #4845E4;
+        background: linear-gradient(35deg, rgba(2,0,36,100) 0%, rgba(72,69,228,100) 35%, rgba(0,212,255,100) 100%);
+        color: #F2F0FF;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        line-height: 40px;
+
+    }
+
+    .label{
+        border: 3px dashed green;
+
+
+    }
+
+    .input textarea{
+        border: 3px dashed red;
+        width: 40%;
+        padding: 12px;
+        margin-top: 6px;
+        margin-bottom: 10px;
+        resize: vertical;
+
+    }
+
+    .contact-container p{
+        font-size: 10px;
+    }
+
+    .contact-container label{
+        font-size: 10px;
+        line-height: 20px;
+        margin-left: 0;
+    }
+
+    .textarea{
+        font-family: Roboto sans-serif;
+    }
+
+
+
+
+    .contact-container h2{
+        color: #F2F0FF;
+    }
+
+    .form action{
+        background-color: #4845E4;
+        color: #F3F6F9;
+
+    }
+
+    .button-section{
+        background-color: #4845E4;
+        background: linear-gradient(35deg, rgba(2,0,36,100) 0%, rgba(72,69,228,100) 35%, rgba(0,212,255,100) 100%);
+        padding: 20px;
+
+    }
+
+    .footer {
+        border: 3px solid blue;
+        background-color: #0C0C0C;
+        color: #F2F0FF;
+        font-size: 10px;
+        text-align: center;
+    }
+
+
+}
+
+
+.footer-small {
+
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+@media screen and (max-width:1250px) {
+    .container ul li {
+        width: 40%;
+        margin-left: 40px;
+    }
+}
